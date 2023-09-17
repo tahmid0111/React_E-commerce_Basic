@@ -9,12 +9,18 @@ import {
 } from "react-router-dom";
 import Women from './Components/Women/Women.jsx';
 import Men from './Components/Men/Men.jsx';
+import Home from './Components/Home/Home.jsx';
+import Main from './Components/Layout/Main.jsx';
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: <Main />,
     children: [
+      {
+        path: "/",
+        element: <Home />,
+      },
       {
         path: "/men",
         element: <Men />,

@@ -1,10 +1,28 @@
-import React from 'react'
+import { useState, useEffect} from 'react'
+import Navbar from '../Navbar/Navbar'
+import WomenProducts from './WomenProducts'
 
 const Women = () => {
+
+  const [products, setProducts] = useState([])
+
+  useEffect(() => {
+    fetch('https://fakestoreapi.com/products/category')
+  }, [])
   return (
-    <div>
-      <h1 className='text-5xl'>Women</h1>
-    </div>
+    <>
+              <div className="grid grid-cols-12 container mx-auto">
+
+              <div className="nav-area col-span-2">
+                  <Navbar />
+              </div>
+
+              <div className="user-area col-span-10">
+                  <WomenProducts />
+              </div>
+
+              </div>
+    </>
   )
 }
 
