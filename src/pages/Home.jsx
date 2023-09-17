@@ -2,6 +2,7 @@ import React from 'react'
 
 import { Outlet } from 'react-router-dom'
 import Navbar from '../Components/Navbar/Navbar'
+import AllProducts from '../Components/allproducts/AllProducts'
 
 
 const Home = () => {
@@ -15,7 +16,7 @@ const Home = () => {
             </div>
 
             <div className="user-area col-span-10">
-                
+                <AllProducts />
             </div>
 
         </div>
