@@ -1,6 +1,6 @@
 import { useState, useEffect} from 'react'
-import Navbar from '../Navbar/Navbar'
-import WomenProducts from './WomenProducts'
+import Navbar from '../Components/Navbar/Navbar'
+import WomenProducts from '../Components/Women/WomenProducts'
 
 const Women = () => {
 
