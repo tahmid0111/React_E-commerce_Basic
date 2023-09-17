@@ -1,37 +1,12 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
 import './index.css'
 
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
-import Women from './Components/Women/Women.jsx';
-import Men from './Components/Men/Men.jsx';
-import Home from './Components/Home/Home.jsx';
-import Main from './Components/Layout/Main.jsx';
+import { RouterProvider } from "react-router-dom";
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Main />,
-    children: [
-      {
-        path: "/",
-        element: <Home />,
-      },
-      {
-        path: "/men",
-        element: <Men />,
-      },
-      {
-        path: "/women",
-        element: <Women />,
-      },
-    ],
-  },
-]);
+
+import router from './Routes/Routes.jsx';
+
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
