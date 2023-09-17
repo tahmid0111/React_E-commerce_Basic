@@ -1,5 +1,6 @@
 import React from 'react'
 import Navbar from '../Components/Navbar/Navbar'
+import MenProducts from '../Components/Men/MenProducts'
 
 const Men = () => {
   return (
@@ -11,7 +12,7 @@ const Men = () => {
         </div>
 
         <div className="user-area col-span-10">
-            <h1>men</h1>
+            <MenProducts />
         </div>
 
         </div>
