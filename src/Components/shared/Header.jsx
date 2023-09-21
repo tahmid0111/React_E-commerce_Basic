@@ -5,7 +5,7 @@ import { HiAdjustments } from "react-icons/hi";
 const Header = () => {
   return (
     <>
-      <div className="container mx-auto flex">
+      <div className="container mx-auto mt-10 mb-20 flex">
         <div className="logo-area basis-1/6">
             <img src="logo.png" alt="" />
         </div>
