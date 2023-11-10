@@ -11,11 +11,7 @@ const WomenProducts = () => {
     }, [])
   return (
     <>
-<<<<<<< HEAD
         <div className="flex flex-col">
-=======
-        <div className="grid lg:md:grid-cols-3 grid-cols-1 gap-4">
->>>>>>> e5ea6a93d151de4e24c2c8629d3a3fe881658384
             {
                 datas.map((product) => <SingleWomenProduct key={product.id} product={product} />)
             }

@@ -1,5 +1,4 @@
 import { createBrowserRouter } from "react-router-dom";
-import Main from "../Layout/Main";
 import Home from "../pages/Home";
 import Men from "../pages/Men";
 import Women from "../pages/Women";
@@ -27,3 +26,4 @@ const router = createBrowserRouter([
   ]);
 
   export default router;
+  
